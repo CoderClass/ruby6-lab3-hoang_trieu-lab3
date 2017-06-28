@@ -10,6 +10,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'byebug', platform: :mri
+  # gem 'guard-rspec', require: false
 end
 group :development do
   gem 'web-console', '~> 2.0'
@@ -24,6 +25,7 @@ gem 'pg'
 gem 'slim-rails'
 group :development do
   # gem 'rails_layout'
+  gem 'guard-rspec', require: false
   gem 'spring-commands-rspec'
 end
 group :development, :test do
@@ -38,4 +40,3 @@ group :test do
   gem 'selenium-webdriver'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
