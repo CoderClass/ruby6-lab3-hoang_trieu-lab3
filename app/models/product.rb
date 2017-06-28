@@ -2,6 +2,9 @@ class Product < ActiveRecord::Base
   before_save :set_default_image_path
   validates :name, presence: true
 
+  def alphabetical
+  end
+
   private
 
   def set_default_image_path
